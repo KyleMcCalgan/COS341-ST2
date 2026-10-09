@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6c52cd">
+  <meta name="description" content="Compiler construction textbook references grouped by chapter, including Chapter 6 translation rules.">
+  <title>Textbook Tables by Chapter | CompilerLab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .chapter-links{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+    .chapter-links a{border:1px solid var(--line);background:var(--paper);border-radius:12px;padding:8px 12px;font-weight:700}
+    .chapter-links a:hover,.chapter-links a:focus-visible{border-color:var(--accent);color:var(--accent)}
+    .chapter-section{scroll-margin-top:84px;margin:30px 0 48px}
+    .image-grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .book-image{width:100%;max-width:850px;margin:0;padding:14px;align-self:start}
+    .book-image img{display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:8px}
+    .book-image figcaption{padding-top:10px;font-weight:700}
+    .page-number{display:block;color:var(--muted);font-size:.9rem;font-weight:500}
+    .empty-note{color:var(--muted)}
+    .environment-reference{max-width:1000px;margin:20px 0 28px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .environment-reference h3{margin:0 0 8px}
+    .environment-reference>p{color:var(--muted);max-width:850px}
+    .environment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin-top:14px}
+    .environment-card{min-width:0;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+    .environment-card h4{margin:0 0 9px}
+    .environment-card table{width:100%;border-collapse:collapse;font-size:.9rem}
+    .environment-card th,.environment-card td{padding:8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .environment-card th{background:var(--soft)}
+    .environment-card p{margin:9px 0 0;color:var(--muted)}
+    .markdown-reference{max-width:900px}
+    .markdown-reference h2,.markdown-reference h3,.markdown-reference h4{margin:1.6em 0 .55em;line-height:1.25}
+    .markdown-reference h2{font-size:1.55rem}
+    .markdown-reference h3{font-size:1.2rem}
+    .markdown-reference p,.markdown-reference li{line-height:1.65}
+    .markdown-reference pre{overflow:auto;padding:15px;border:1px solid var(--line);border-radius:12px;background:#f2f3f8;line-height:1.55}
+    .markdown-reference code{font-family:ui-monospace,Consolas,monospace}
+    .markdown-reference :not(pre)>code{padding:2px 5px;border-radius:5px;background:#f2f3f8}
+    .markdown-reference blockquote{margin:14px 0;padding:5px 15px;border-left:3px solid var(--accent);color:var(--muted);background:var(--soft)}
+    .markdown-reference table{display:block;overflow-x:auto;border-collapse:collapse;width:100%;margin:14px 0}
+    .markdown-reference th,.markdown-reference td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+    .markdown-reference th{background:var(--soft)}
+    .photo-option{margin:22px 0}
+    .photo-option summary{display:inline-flex;cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:9px 13px;background:var(--paper);font-weight:700}
+    .photo-option[open] summary{margin-bottom:14px}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="shell topin"><a class="brand" href="index.html">Compiler<span>Lab</span></a><div class="topright"><a class="iconbtn" href="index.html">Index</a></div></div></header>
+  <main class="shell">
+    <section class="hero"><div class="eyebrow">Textbook reference</div><h1>Tables by chapter</h1><p class="subtitle">Browse the supplied material by chapter. Chapter 6 opens with the translation-rule reference; its original textbook photos are available on demand.</p></section>
+    <nav class="chapter-links" id="chapterLinks" aria-label="Jump to chapter"></nav>
+    <div id="chapterImages"></div>
+  </main>
+  <script src="data.js"></script>
+  <script src="assets/chapter6-reference.js"></script>
+  <script src="tables.js"></script>
+</body>
+</html>
